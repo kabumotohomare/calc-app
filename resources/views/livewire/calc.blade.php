@@ -2,12 +2,13 @@
 
 use function Livewire\Volt\{state, mount};
 
-state(['value1', 'operator', 'value2']);
+state(['value1', 'operator', 'value2', 'result']);
 
 mount(function($value1, $operator, $value2){
     $this->value1 = $value1;
-    $this->value2 = $value2;
     $this->operator = $this->mathematicate($operator);
+    $this->value2 = $value2;
+    $this->result = $this->calculate($value1, $operator, $value2);
 });
 
 $mathematicate = function($symbol){
