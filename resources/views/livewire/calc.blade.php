@@ -43,6 +43,5 @@ $calculate = function($value1, $operator, $value2) {
 
 <div>
     <h1>計算結果</h1>
-    {{-- localhost/calcs/value1/operator/value2 --}}
     <h2>{{$value1}}{{$operator}}{{$value2}}={{$result}}</h2>
 </div>
