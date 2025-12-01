@@ -32,10 +32,10 @@ $calculate = function($value1, $operator, $value2) {
         if ($value2 != 0) {
             return $value1 / $value2;
         } else {
-            return '解なし';
+            return "解なし";
         }
     } else {
-        return '無効な演算子です';
+        return "無効な演算子です";
     }
 };
 
